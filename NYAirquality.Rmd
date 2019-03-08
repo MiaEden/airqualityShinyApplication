@@ -1,0 +1,60 @@
+---
+title: "NYC airquality - best month to visit? Shiny app!"
+author: "Mia Eden"
+date: "March 7, 2019"
+output:
+  slidy_presentation: default
+  ioslides_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+### Summary
+
+New York City is a great place to visit but as any major metropolis has a very poor air quality, making it almost uncomfortable to breath - especially for those with respiratory issues.
+
+So when should you visit? Well, it would be convenient to plan your trip for the least polluted month.
+
+To help with your decision, we've built this simple shiny application using the R dataset airquality that allows you to see the boxplot by month for each of the variables available. 
+
+This way, you can compare results by month and decide for the month with lowest air pollution.
+
+And best thing about it: as a reactive shiny application, it immediately returns results for the variable you selected this way you don't waste any time and may start packing right now - if this is the right month!  
+
+
+### How to run the airquality shiny application  
+
+```
+Go to  https://miaeden.shinyapps.io/shinyAirquality/  
+(where your NYC Air Quality shiny app is located)
+
+* On the left panel, do action 1:  
+    * Select how many rows of the table you want to preview (default is 5)  
+    * Notice the updated airquality table on the right panel 
+    
+* On the right panel, do **action 2**: 
+    * Select the variable for which you want to see the boxplot  
+    * Notice the updated airquality boxplot on the right panel.
+    * Hover for details (interactive)
+    
+* Can you tell in which month does the airquality seem to improve?
+```
+
+
+### Source code for the shiny application
+
+In case you are interested in seeing the backend info, the source code for **ui.R** and **server.R** files are available on the **GitHub repo**: 
+
+https://github.com/MiaEden/airqualityShinyApplication/tree/master
+ 
+* About the airquality dataset: daily readings of the following air quality values for May 1 to September 30, 1973. Variables: 
+    * Ozone: Mean ozone in parts per billion from 1300 to 1500 hours at Roosevelt Island   
+    * Solar.R: Solar radiation in Langleys in the frequency band 4000-7700 Angstroms from 0800 to 1200 hours at Central Park  
+    * Wind: Average wind speed in miles per hour at 0700 and 1000 hours at LaGuardia Airport  
+    * Temp: Maximum daily temperature in degrees Fahrenheit at La Guardia Airport    
+     
+
+#### Thank you (and have a nice trip to NYC)!
+
